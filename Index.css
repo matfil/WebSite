@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+body
+{
+	font-family: "Arial", Arial, Sans-serif;
+	margin : 0px;
+}
+header
+{
+	height : 180px;
+	display : block;
+	background-color : white;
+}
+
+img#logo
+{
+	height	:	176px;
+	width 	:	209px; 
+}
+aside
+{
+	float:left;
+	background-color : white;
+}
+p
+{
+margin : 0px;	
+}
+section
+{	
+	margin : 0px 0px 0px 209px;
+	padding : 0px 10px 0px 10px;
+	background-color : red;	
+}
+article
+{
+	overflow:scroll;
+	background-color : white;
+	padding : 0px 40px 0px 40px;
+	margin : 0px 0px 20px 0px;
+}
+nav#side
+{
+	width : 209px;
+}
+nav#side div
+{
+	display : block;
+	padding : 5px 5px 5px 5px ;
+	margin : 0px 5px 5px 5px ;
+	background-color : red;
+	color : white;
+}
+nav#side div:hover
+{
+	background-color : white;
+	color : black;
+}
+nav#top
+{
+	height : 30px;
+	background-color : red;
+	padding : 5px 10px 0px 0px ;	
+}
+nav#top div
+{
+	display :inline-block;
+	width : 100px;
+	background-color : white;
+	padding : 5px 5px 5px 5px ;
+	
+}
+nav#top div:hover
+{
+	background-color : #6b0000;
+}
+footer
+{
+	height : 20px;
+	padding : 1px 0px 1px 1px;
+	float : bottom;
+	display : block;
+	background-color : red;
+}
