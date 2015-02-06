@@ -6,6 +6,11 @@ $("section").load("WebContent/Finance/Finance.html",function(responseTxt,statusT
 {
 	if(statusTxt=="success")
 	{
+		$("Opis").css("background-color","white");
+		$("Korzysci").css("background-color","gray");
+		$("Wymagania").css("background-color","gray");
+		$("Plan").css("background-color","gray");
+		$("Terminy").css("background-color","gray");
 		$("#text").load("WebContent/Finance/Opis.html",function(responseTxt,statusTxt,xhr)
 				{$("#container").height( $(window).height() - 202);
 				$("aside").height( $("#container").height());
@@ -13,20 +18,45 @@ $("section").load("WebContent/Finance/Finance.html",function(responseTxt,statusT
 				$("article").height( $("#container").height() - 30);});
 		$("#Opis").click(function(){
 			$("#text").load("WebContent/Finance/Opis.html");
+			$("Opis").css("background-color","white");
+			$("Korzysci").css("background-color","gray");
+			$("Wymagania").css("background-color","gray");
+			$("Plan").css("background-color","gray");
+			$("Terminy").css("background-color","gray");
 		});
 		$("#Korzysci").click(function(){
 			$("#text").load("WebContent/Finance/Korzysci.html");
+			$("Korzysci").css("background-color","white");
+			$("Opis").css("background-color","gray");
+			$("Wymagania").css("background-color","gray");
+			$("Plan").css("background-color","gray");
+			$("Terminy").css("background-color","gray");
 		});
 		$("#Wymagania").click(function(){
 			$("#text").load("WebContent/Finance/Wymagania.html");
+			$("Opis").css("background-color","gray");
+			$("Korzysci").css("background-color","gray");
+			$("Wymagania").css("background-color","white");
+			$("Plan").css("background-color","gray");
+			$("Terminy").css("background-color","gray");
 		});
 		$("#Plan").click(function(){
 			$("#text").load("WebContent/Finance/Plan.html");
+			$("Opis").css("background-color","gray");
+			$("Korzysci").css("background-color","gray");
+			$("Wymagania").css("background-color","gray");
+			$("Plan").css("background-color","white");
+			$("Terminy").css("background-color","gray");
 		});
 		$("#Terminy").click(function(){
 			$("#text").load("WebContent/Finance/Terminy.html");
+			$("Opis").css("background-color","gray");
+			$("Korzysci").css("background-color","gray");
+			$("Wymagania").css("background-color","gray");
+			$("Plan").css("background-color","gray");
+			$("Terminy").css("background-color","white");
 		});
-	}	
+	}
 });
 });
 })
